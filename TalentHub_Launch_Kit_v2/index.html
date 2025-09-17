@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TalentHub — зарабатывай на своих навыках: уборка, дизайн, репетиторство, IT. Без посредников. С гарантией оплаты.">
+  <meta name="keywords" content="заработок, фриланс, подработка, заказы, услуги, репетитор, уборка, курьер, талант, talent">
+  <title>TalentHub — Твой талант — твой доход</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6366F1;  /* Фиолетово-синий */
+      --secondary: #10B981; /* Зелёный — успех/деньги */
+      --accent: #FF6B35;    /* Оранжевый — акценты */
+      --bg: #F9FAFB;
+      --text: #1F2937;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      color: var(--primary);
+    }
+    .logo span { color: var(--secondary); }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: var(--primary); }
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255,107,53,0.3);
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, var(--primary), #8B5CF6);
+      color: white;
+      margin: 20px 0;
+      border-radius: 16px;
+    }
+    .hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    .hero .subtitle {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-weight: 500;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 60px 0;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .feature {
+      text-align: center;
+      max-width: 300px;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .feature:hover { transform: translateY(-5px); }
+    .feature h3 {
+      font-family: 'Montserrat', sans-serif;
+      margin: 20px 0 10px;
+      color: var(--primary);
+    }
+    footer {
+      background: var(--text);
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 50px;
+      border-radius: 12px 12px 0 0;
+    }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="container">
+    <div class="logo">Talent<span>Hub</span></div>
+    <nav>
+      <a href="#how">Как это работает</a>
+      <a href="#categories">Категории</a>
+      <a href="#for-workers">Для исполнителей</a>
+    </nav>
+    <a href="#register" class="btn">Регистрация</a>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Твой талант — твой доход</h1>
+      <p class="subtitle">Найди заказ рядом с домом или работай онлайн. Без посредников. С гарантией оплаты.</p>
+      <a href="#" class="btn">💼 Найти исполнителя</a>
+      <a href="#" class="btn">💰 Зарабатывать</a>
+    </section>
+
+    <section class="features" id="how">
+      <div class="feature">
+        <h3>🚀 Быстро</h3>
+        <p>Откликнись на заказ — получи его за 5 минут.</p>
+      </div>
+      <div class="feature">
+        <h3>💰 Безопасно</h3>
+        <p>Оплата замораживается до подтверждения работы.</p>
+      </div>
+      <div class="feature">
+        <h3>📱 Удобно</h3>
+        <p>Всё в приложении: чат, оплата, отзывы, вывод денег.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 TalentHub.ru — Твой талант — твой доход</p>
+    <small>Политика конфиденциальности | Пользовательское соглашение</small>
+  </footer>
+
+</body>
+</html>
